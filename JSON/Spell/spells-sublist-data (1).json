@@ -1,0 +1,1273 @@
+[
+	{
+		"name": "Ceremony",
+		"source": "XGE",
+		"page": 151,
+		"level": 1,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "hour"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "touch"
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "25 gp worth of powdered silver, which the spell consumes",
+				"cost": 2500,
+				"consume": true
+			}
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"meta": {
+			"ritual": true
+		},
+		"entries": [
+			"You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.",
+			{
+				"type": "entries",
+				"name": "Atonement",
+				"entries": [
+					"You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom ({@skill Insight}) check. On a successful check, you restore the target to its original alignment."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Bless Water",
+				"entries": [
+					"You touch one {@item vial|phb} of water and cause it to become {@item Holy Water (flask)|phb|holy water}."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Coming of Age",
+				"entries": [
+					"You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a {@dice d4} and add the number rolled to the ability check. A creature can benefit from this rite only once."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Dedication",
+				"entries": [
+					"You touch one humanoid who wishes to be dedicated to your god's service. For the next 24 hours, whenever the target makes a saving throw, it can roll a {@dice d4} and add the number rolled to the save. A creature can benefit from this rite only once."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Funeral Rite",
+				"entries": [
+					"You touch one corpse, and for the next 7 days, the target can't become undead by any means short of a {@spell wish} spell."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Wedding",
+				"entries": [
+					"You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed."
+				]
+			}
+		],
+		"affectsCreatureType": [
+			"humanoid"
+		],
+		"miscTags": [
+			"MAC"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"classes": {
+			"fromClassList": [
+				{
+					"name": "Cleric",
+					"source": "PHB"
+				},
+				{
+					"name": "Paladin",
+					"source": "PHB"
+				}
+			],
+			"fromClassListVariant": [
+				{
+					"name": "Druid",
+					"source": "PHB",
+					"definedInSource": "UAClassFeatureVariants"
+				}
+			]
+		},
+		"__prop": "spell",
+		"_tmpClasses": {
+			"fromSubclass": [
+				{
+					"class": {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Divine Soul",
+						"source": "XGE"
+					}
+				},
+				{
+					"class": {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Favored Soul v2 (UA)",
+						"source": "UASorcerer"
+					}
+				},
+				{
+					"class": {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Favored Soul v3 (UA)",
+						"source": "UARevisedSubclasses"
+					}
+				}
+			]
+		},
+		"_tmpRaces": [],
+		"_normalisedTime": 3600,
+		"_normalisedRange": 1,
+		"_fSources": "XGE",
+		"_isConc": false,
+		"_fMeta": [
+			"Ritual",
+			"Verbal",
+			"Somatic",
+			"Material",
+			"Material with Cost",
+			"Material is Consumed",
+			"MAC"
+		],
+		"_fClasses": [
+			{
+				"item": "Cleric",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Paladin",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fSubclasses": [
+			{
+				"item": "Sorcerer: Divine Soul",
+				"nest": "Sorcerer",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Sorcerer: Favored Soul v2 (UAS)",
+				"nest": "Sorcerer",
+				"userData": {
+					"group": true
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Sorcerer: Favored Soul v3 (UARSC)",
+				"nest": "Sorcerer",
+				"userData": {
+					"group": true
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fVariantClasses": [
+			{
+				"item": "Druid [UACFV]",
+				"nest": "Unearthed Arcana: Class Feature Variants",
+				"userData": {
+					"group": 0,
+					"equivalentClassName": "Druid",
+					"definedInSource": "UAClassFeatureVariants"
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fClassesAndVariantClasses": [
+			{
+				"item": "Cleric",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Paladin",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fRaces": [],
+		"_fBackgrounds": [],
+		"_fEldritchInvocations": [],
+		"_fTimeType": [
+			"hour"
+		],
+		"_fDurationType": "Instant",
+		"_fRangeType": "Touch",
+		"_fAreaTags": [
+			"ST"
+		],
+		"_fAffectsCreatureType": [
+			"humanoid"
+		]
+	},
+	{
+		"name": "Druidcraft",
+		"source": "PHB",
+		"page": 236,
+		"srd": true,
+		"level": 0,
+		"school": "T",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"Whispering to the spirits of nature, you create one of the following effects within range:",
+			{
+				"type": "list",
+				"items": [
+					"You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.",
+					"You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.",
+					"You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.",
+					"You instantly light or snuff out a candle, a torch, or a small campfire."
+				]
+			}
+		],
+		"classes": {
+			"fromClassList": [
+				{
+					"name": "Druid",
+					"source": "PHB"
+				}
+			],
+			"fromSubclass": [
+				{
+					"class": {
+						"name": "Fighter",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Arcane Archer",
+						"source": "XGE"
+					}
+				}
+			]
+		},
+		"races": [
+			{
+				"name": "Halfling (Lotusden)",
+				"source": "EGW",
+				"baseName": "Halfling",
+				"baseSource": "PHB"
+			},
+			{
+				"name": "Fairy",
+				"source": "WBtW"
+			}
+		],
+		"backgrounds": [
+			{
+				"name": "Selesnya Initiate",
+				"source": "GGR"
+			},
+			{
+				"name": "Simic Scientist",
+				"source": "GGR"
+			}
+		],
+		"__prop": "spell",
+		"_tmpClasses": {
+			"fromSubclass": [
+				{
+					"class": {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Nature",
+						"source": "PHB"
+					}
+				}
+			]
+		},
+		"_tmpRaces": [],
+		"_normalisedTime": 1,
+		"_normalisedRange": 360,
+		"_fSources": "PHB",
+		"_isConc": false,
+		"_fMeta": [
+			"Verbal",
+			"Somatic",
+			"SRD"
+		],
+		"_fClasses": [
+			{
+				"item": "Druid",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fSubclasses": [
+			{
+				"item": "Fighter: Arcane Archer",
+				"nest": "Fighter",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null,
+				"btnMini": {}
+			},
+			{
+				"item": "Cleric: Nature",
+				"nest": "Cleric",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fVariantClasses": [],
+		"_fClassesAndVariantClasses": [
+			{
+				"item": "Druid",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fRaces": [
+			{
+				"item": "Halfling (Lotusden)",
+				"nest": "Halfling",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null,
+				"btnMini": {}
+			},
+			{
+				"item": "Fairy",
+				"nest": "(No Subraces)",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null,
+				"btnMini": {}
+			}
+		],
+		"_fBackgrounds": [
+			"Selesnya Initiate",
+			"Simic Scientist"
+		],
+		"_fEldritchInvocations": [],
+		"_fTimeType": [
+			"action"
+		],
+		"_fDurationType": "Instant",
+		"_fRangeType": "Point",
+		"_fAreaTags": [],
+		"_fAffectsCreatureType": [
+			"aberration",
+			"beast",
+			"celestial",
+			"construct",
+			"dragon",
+			"elemental",
+			"fey",
+			"fiend",
+			"giant",
+			"humanoid",
+			"monstrosity",
+			"ooze",
+			"plant",
+			"undead"
+		]
+	},
+	{
+		"name": "Fireball",
+		"source": "PHB",
+		"page": 241,
+		"srd": true,
+		"basicRules": true,
+		"level": 3,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 150
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a tiny ball of bat guano and sulfur"
+		},
+		"duration": [
+			{
+				"type": "instant"
+			}
+		],
+		"entries": [
+			"A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes {@damage 8d6} fire damage on a failed save, or half as much damage on a successful one.",
+			"The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "At Higher Levels",
+				"entries": [
+					"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 8d6|3-9|1d6} for each slot level above 3rd."
+				]
+			}
+		],
+		"damageInflict": [
+			"fire"
+		],
+		"savingThrow": [
+			"dexterity"
+		],
+		"areaTags": [
+			"S"
+		],
+		"classes": {
+			"fromClassList": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			],
+			"fromSubclass": [
+				{
+					"class": {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Light",
+						"source": "PHB"
+					}
+				},
+				{
+					"class": {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Fiend",
+						"source": "PHB"
+					}
+				},
+				{
+					"class": {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Zeal (PSA)",
+						"source": "PSA"
+					}
+				},
+				{
+					"class": {
+						"name": "Artificer (Revisited)",
+						"source": "UAArtificerRevisited"
+					},
+					"subclass": {
+						"name": "Artillerist",
+						"source": "UAArtificerRevisited"
+					}
+				},
+				{
+					"class": {
+						"name": "Druid",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Wildfire (UA)",
+						"source": "UAClericDruidWizard"
+					}
+				},
+				{
+					"class": {
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					"subclass": {
+						"name": "Artillerist",
+						"source": "TCE"
+					}
+				},
+				{
+					"class": {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Genie (UA)",
+						"source": "UA2020SubclassesRevisited",
+						"subSubclass": "Efreeti"
+					}
+				},
+				{
+					"class": {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Genie",
+						"source": "TCE",
+						"subSubclass": "Efreeti"
+					}
+				},
+				{
+					"class": {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Genie (UA)",
+						"source": "UA2020SubclassesRevisited"
+					}
+				},
+				{
+					"class": {
+						"name": "Monk",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Four Elements",
+						"source": "PHB"
+					}
+				}
+			]
+		},
+		"eldritchInvocations": [
+			{
+				"name": "Kiss of Mephistopheles",
+				"source": "UAWarlockAndWizard"
+			}
+		],
+		"hasFluffImages": true,
+		"__prop": "spell",
+		"_tmpClasses": {
+			"fromSubclass": [
+				{
+					"class": {
+						"name": "Fighter",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Eldritch Knight",
+						"source": "PHB"
+					}
+				},
+				{
+					"class": {
+						"name": "Rogue",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Arcane Trickster",
+						"source": "PHB"
+					}
+				}
+			]
+		},
+		"_tmpRaces": [],
+		"_normalisedTime": 1,
+		"_normalisedRange": 1800,
+		"_fSources": "PHB",
+		"_isConc": false,
+		"_fMeta": [
+			"Verbal",
+			"Somatic",
+			"Material",
+			"SCL",
+			"SRD",
+			"Basic Rules",
+			"Has Images"
+		],
+		"_fClasses": [
+			{
+				"item": "Sorcerer",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Wizard",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fSubclasses": [
+			{
+				"item": "Cleric: Light",
+				"nest": "Cleric",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Warlock: Fiend",
+				"nest": "Warlock",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Cleric: Zeal (PSA)",
+				"nest": "Cleric",
+				"userData": {
+					"group": true
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Artificer (Revisited): Artillerist (UAAR)",
+				"nest": "Artificer (Revisited)",
+				"userData": {
+					"group": true
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Druid: Wildfire (UACDW)",
+				"nest": "Druid",
+				"userData": {
+					"group": true
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Artificer: Artillerist",
+				"nest": "Artificer",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Warlock: Genie (UA20SCR), Efreeti",
+				"nest": "Warlock",
+				"userData": {
+					"group": true
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Warlock: Genie, Efreeti",
+				"nest": "Warlock",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Warlock: Genie (UA20SCR)",
+				"nest": "Warlock",
+				"userData": {
+					"group": true
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Monk: Four Elements",
+				"nest": "Monk",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Fighter: Eldritch Knight",
+				"nest": "Fighter",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Rogue: Arcane Trickster",
+				"nest": "Rogue",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fVariantClasses": [],
+		"_fClassesAndVariantClasses": [
+			{
+				"item": "Sorcerer",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Wizard",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fRaces": [],
+		"_fBackgrounds": [],
+		"_fEldritchInvocations": [
+			"Kiss of Mephistopheles"
+		],
+		"_fTimeType": [
+			"action"
+		],
+		"_fDurationType": "Instant",
+		"_fRangeType": "Point",
+		"_fAreaTags": [
+			"S"
+		],
+		"_fAffectsCreatureType": [
+			"aberration",
+			"beast",
+			"celestial",
+			"construct",
+			"dragon",
+			"elemental",
+			"fey",
+			"fiend",
+			"giant",
+			"humanoid",
+			"monstrosity",
+			"ooze",
+			"plant",
+			"undead"
+		]
+	},
+	{
+		"name": "Fizban's Platinum Shield",
+		"source": "FTD",
+		"page": 20,
+		"level": 6,
+		"school": "A",
+		"time": [
+			{
+				"number": 1,
+				"unit": "bonus"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 60
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": {
+				"text": "a platinum-plated dragon scale, worth at least 500 gp",
+				"cost": 50000
+			}
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"You create a field of silvery light that surrounds a creature of your choice within range (you can choose yourself). The field sheds dim light out to 5 feet. While surrounded by the field, a creature gains the following benefits:",
+			{
+				"type": "list",
+				"style": "list-hang-notitle",
+				"items": [
+					{
+						"type": "item",
+						"name": "Cover",
+						"entries": [
+							"The creature has half cover."
+						]
+					},
+					{
+						"type": "item",
+						"name": "Damage Resistance",
+						"entries": [
+							"The creature has resistance to acid, cold, fire, lightning, and poison damage."
+						]
+					},
+					{
+						"type": "item",
+						"name": "Evasion",
+						"entries": [
+							"If the creature is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the creature instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+						]
+					}
+				]
+			},
+			"As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field."
+		],
+		"classes": {
+			"fromClassList": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"__prop": "spell",
+		"_tmpClasses": {
+			"fromSubclass": [
+				{
+					"class": {
+						"name": "Fighter",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Eldritch Knight",
+						"source": "PHB"
+					}
+				},
+				{
+					"class": {
+						"name": "Rogue",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Arcane Trickster",
+						"source": "PHB"
+					}
+				},
+				{
+					"class": {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Arcana",
+						"source": "SCAG"
+					}
+				}
+			]
+		},
+		"_tmpRaces": [],
+		"_scrollNote": true,
+		"_normalisedTime": 2,
+		"_normalisedRange": 720,
+		"_fSources": "FTD",
+		"_isConc": true,
+		"_fMeta": [
+			"Concentration",
+			"Verbal",
+			"Somatic",
+			"Material",
+			"Material with Cost"
+		],
+		"_fClasses": [
+			{
+				"item": "Sorcerer",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Wizard",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fSubclasses": [
+			{
+				"item": "Fighter: Eldritch Knight",
+				"nest": "Fighter",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Rogue: Arcane Trickster",
+				"nest": "Rogue",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Cleric: Arcana",
+				"nest": "Cleric",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fVariantClasses": [],
+		"_fClassesAndVariantClasses": [
+			{
+				"item": "Sorcerer",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Wizard",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fRaces": [],
+		"_fBackgrounds": [],
+		"_fEldritchInvocations": [],
+		"_fTimeType": [
+			"bonus"
+		],
+		"_fDurationType": "1 Minute",
+		"_fRangeType": "Point",
+		"_fAreaTags": [],
+		"_fAffectsCreatureType": [
+			"aberration",
+			"beast",
+			"celestial",
+			"construct",
+			"dragon",
+			"elemental",
+			"fey",
+			"fiend",
+			"giant",
+			"humanoid",
+			"monstrosity",
+			"ooze",
+			"plant",
+			"undead"
+		]
+	},
+	{
+		"name": "Witch Bolt",
+		"source": "PHB",
+		"page": 289,
+		"level": 1,
+		"school": "V",
+		"time": [
+			{
+				"number": 1,
+				"unit": "action"
+			}
+		],
+		"range": {
+			"type": "point",
+			"distance": {
+				"type": "feet",
+				"amount": 30
+			}
+		},
+		"components": {
+			"v": true,
+			"s": true,
+			"m": "a twig from a tree that has been struck by lightning"
+		},
+		"duration": [
+			{
+				"type": "timed",
+				"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+			}
+		],
+		"entries": [
+			"A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes {@damage 1d12} lightning damage, and on each of your turns for the duration, you can use your action to deal {@damage 1d12} lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell's range or if it has total cover from you."
+		],
+		"entriesHigherLevel": [
+			{
+				"type": "entries",
+				"name": "At Higher Levels",
+				"entries": [
+					"When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by {@scaledamage 1d12|1-9|1d12} for each slot level above 1st."
+				]
+			}
+		],
+		"damageInflict": [
+			"lightning"
+		],
+		"spellAttack": [
+			"R"
+		],
+		"areaTags": [
+			"ST"
+		],
+		"classes": {
+			"fromClassList": [
+				{
+					"name": "Sorcerer",
+					"source": "PHB"
+				},
+				{
+					"name": "Warlock",
+					"source": "PHB"
+				},
+				{
+					"name": "Wizard",
+					"source": "PHB"
+				}
+			]
+		},
+		"__prop": "spell",
+		"_tmpClasses": {
+			"fromSubclass": [
+				{
+					"class": {
+						"name": "Fighter",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Eldritch Knight",
+						"source": "PHB"
+					}
+				},
+				{
+					"class": {
+						"name": "Rogue",
+						"source": "PHB"
+					},
+					"subclass": {
+						"name": "Arcane Trickster",
+						"source": "PHB"
+					}
+				}
+			]
+		},
+		"_tmpRaces": [],
+		"_normalisedTime": 1,
+		"_normalisedRange": 360,
+		"_fSources": "PHB",
+		"_isConc": true,
+		"_fMeta": [
+			"Concentration",
+			"Verbal",
+			"Somatic",
+			"Material",
+			"SCL"
+		],
+		"_fClasses": [
+			{
+				"item": "Sorcerer",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Warlock",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Wizard",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fSubclasses": [
+			{
+				"item": "Fighter: Eldritch Knight",
+				"nest": "Fighter",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Rogue: Arcane Trickster",
+				"nest": "Rogue",
+				"userData": {
+					"group": false
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fVariantClasses": [],
+		"_fClassesAndVariantClasses": [
+			{
+				"item": "Sorcerer",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Warlock",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			},
+			{
+				"item": "Wizard",
+				"userData": {
+					"group": 0
+				},
+				"rendered": null,
+				"searchText": null
+			}
+		],
+		"_fRaces": [],
+		"_fBackgrounds": [],
+		"_fEldritchInvocations": [],
+		"_fTimeType": [
+			"action"
+		],
+		"_fDurationType": "1 Minute",
+		"_fRangeType": "Point",
+		"_fAreaTags": [
+			"ST"
+		],
+		"_fAffectsCreatureType": [
+			"aberration",
+			"beast",
+			"celestial",
+			"construct",
+			"dragon",
+			"elemental",
+			"fey",
+			"fiend",
+			"giant",
+			"humanoid",
+			"monstrosity",
+			"ooze",
+			"plant",
+			"undead"
+		]
+	}
+]

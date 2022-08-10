@@ -1,0 +1,836 @@
+[
+	{
+		"name": "Tiny Servant",
+		"source": "XGE",
+		"page": 169,
+		"size": [
+			"T"
+		],
+		"type": "construct",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 10,
+			"formula": "4d4"
+		},
+		"speed": {
+			"walk": 30,
+			"climb": 30
+		},
+		"str": 4,
+		"dex": 16,
+		"con": 10,
+		"int": 2,
+		"wis": 10,
+		"cha": 1,
+		"senses": [
+			"blindsight 60 ft. (blind beyond this radius)"
+		],
+		"passive": 10,
+		"immune": [
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"action": [
+			{
+				"name": "Slam",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+				]
+			}
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"__prop": "monster",
+		"_pTypes": {
+			"type": "construct",
+			"tags": [],
+			"asText": "construct"
+		},
+		"_pCr": "Unknown",
+		"_fCr": [
+			"Unknown"
+		],
+		"_fSpeedType": [
+			"walk",
+			"climb"
+		],
+		"_fSpeed": 30,
+		"_fAc": [
+			15
+		],
+		"_fHp": 10,
+		"_fAlign": [
+			"U"
+		],
+		"_fVuln": [],
+		"_fRes": [],
+		"_fImm": [
+			"poison",
+			"psychic"
+		],
+		"_fCondImm": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned"
+		],
+		"_fSave": [],
+		"_fSkill": [],
+		"_fSources": "XGE",
+		"_fPassive": 10,
+		"_fMisc": [
+			"MW",
+			"Has Token",
+			"AC from Natural Armor"
+		],
+		"_fLanguageTags": [
+			"None"
+		]
+	},
+	{
+		"name": "Vecna the Archlich",
+		"shortName": "Vecna",
+		"isNamedCreature": true,
+		"source": "VD",
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "undead",
+			"tags": [
+				"Wizard"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"formula": "32d8 + 128",
+			"average": 272
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 16,
+		"con": 18,
+		"int": 22,
+		"wis": 24,
+		"cha": 16,
+		"save": {
+			"con": "+12",
+			"int": "+14",
+			"wis": "+15"
+		},
+		"skill": {
+			"arcana": "+22",
+			"history": "+14",
+			"insight": "+15",
+			"perception": "+15"
+		},
+		"senses": [
+			"truesight 120 ft."
+		],
+		"passive": 25,
+		"resist": [
+			"cold",
+			"lightning",
+			"necrotic"
+		],
+		"immune": [
+			{
+				"immune": [
+					"poison"
+				]
+			},
+			{
+				"immune": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks"
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"poisoned",
+			"stunned"
+		],
+		"languages": [
+			"Common",
+			"Draconic",
+			"Elvish",
+			"Infernal"
+		],
+		"cr": "26",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"Vecna casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 22}):"
+				],
+				"displayAs": "action",
+				"will": [
+					"{@spell animate dead} (as an action)",
+					"{@spell detect magic}",
+					"{@spell dispel magic}",
+					"{@spell fly}",
+					"{@spell lightning bolt}",
+					"{@spell mage hand}",
+					"{@spell prestidigitation}"
+				],
+				"daily": {
+					"2e": [
+						"{@spell dimension door}",
+						"{@spell invisibility}",
+						"{@spell scrying} (as an action)"
+					],
+					"1e": [
+						"{@spell dominate monster}",
+						"{@spell globe of invulnerability}",
+						"{@spell plane shift} (self only)"
+					]
+				},
+				"ability": "int",
+				"type": "spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "Legendary Resistance (5/Day)",
+				"entries": [
+					"If Vecna fails a saving throw, he can choose to succeed instead."
+				]
+			},
+			{
+				"name": "Special Equipment",
+				"entries": [
+					"Vecna carries a magic dagger named Afterthought. In the hands of anyone other than Vecna, Afterthought is a {@item +2 dagger}."
+				]
+			},
+			{
+				"name": "Undying",
+				"entries": [
+					"If Vecna is slain, his soul refuses to accept its fate and lives on as a disembodied spirit that fashions a new body for itself after {@dice 1d100} years. Vecna's soul can fashion a new body even if its old body was burned to ash or otherwise obliterated. When the new body is complete, Vecna regains all his hit points and becomes active again. Vecna's new body appears anywhere within 100 miles of where Vecna was slain."
+				]
+			},
+			{
+				"name": "Unusual Nature",
+				"entries": [
+					"Vecna doesn't require air, food, drink, or sleep."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"Vecna uses Flight of the Damned (if available), Rotten Fate, or Spellcasting. He then makes two attacks with {@i Afterthought}."
+				]
+			},
+			{
+				"name": "Afterthought",
+				"entries": [
+					"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage, plus 9 ({@damage 2d8}) necrotic damage. If the target is a creature, it is afflicted by entropic magic, taking 9 ({@damage 2d8}) necrotic damage at the start of each of its turns. Immediately after taking this damage on its turn, the target can make a {@dc 20} Constitution saving throw, ending the effect on itself on a success. Until it succeeds on this save, the afflicted target can't regain hit points."
+				]
+			},
+			{
+				"name": "Flight of the Damned {@recharge 5}",
+				"entries": [
+					"Vecna conjures a torrent of flying, spectral entities that fill a 120-foot cone and pass through all creatures in that area before dissipating. Each creature in that area must make a {@dc 22} Constitution saving throw. On a failed save, the creature takes 36 ({@damage 8d8}) necrotic damage and is {@condition frightened} of Vecna for 1 minute. On a failed save, the creature takes half as much damage and isn't {@condition frightened}. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			},
+			{
+				"name": "Rotten Fate",
+				"entries": [
+					"Vecna causes necrotic magic to engulf one creature he can see within 120 feet of himself. The target must make a {@dc 22} Constitution saving throw, taking 96 ({@damage 8d8 + 60}) necrotic damage on a failed save, or half as much damage on a successful one. A Humanoid killed by this magic rises as a {@creature zombie} at the start of Vecna's next turn and acts immediately after Vecna in the initiative order. The {@creature zombie} is under Vecna's control."
+				]
+			}
+		],
+		"bonus": [
+			{
+				"name": "Vile Teleport",
+				"entries": [
+					"Vecna teleports, along with any equipment he is wearing or carrying, up to 30 feet to an unoccupied space he can see. He can cause each creature of his choice within 15 feet of his destination space to take 10 ({@damage 3d6}) psychic damage. If at least one creature takes this damage, Vecna regains 80 hit points."
+				]
+			}
+		],
+		"reactionHeader": [
+			"Vecna can take up to three reactions per round but only one per turn."
+		],
+		"reaction": [
+			{
+				"name": "Dread Counterspell",
+				"entries": [
+					"Vecna utters a dread word to interrupt a creature he can see that is casting a spell. If the spell is 4th level or lower, it fails and has no effect. If the spell is 5th level or higher, Vecna makes an Intelligence check ({@dc 10} + the spell's level). On a success, the spell fails and has no effect. Whatever the spell's level, the caster takes 10 ({@damage 3d6}) psychic damage if the spell fails."
+				]
+			},
+			{
+				"name": "Fell Rebuke",
+				"entries": [
+					"In response to being hit by an attack, Vecna utters a fell word, dealing 10 ({@damage 3d6}) necrotic damage to the attacker, and Vecna teleports, along with any equipment he is wearing or carrying, up to 30 feet to an unoccupied space he can see."
+				]
+			}
+		],
+		"legendaryGroup": {
+			"name": "Vecna",
+			"source": "VD"
+		},
+		"altArt": [
+			{
+				"name": "Vecna the Archlich (Alt)",
+				"source": "VD"
+			}
+		],
+		"traitTags": [
+			"Legendary Resistances"
+		],
+		"senseTags": [
+			"U"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"DR",
+			"E",
+			"I"
+		],
+		"damageTags": [
+			"N",
+			"P",
+			"Y"
+		],
+		"damageTagsSpell": [
+			"L",
+			"O"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"conditionInflict": [
+			"frightened"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"__prop": "monster",
+		"_pTypes": {
+			"type": "undead",
+			"tags": [
+				"wizard"
+			],
+			"asText": "undead (Wizard)"
+		},
+		"_pCr": "26",
+		"_fCr": [
+			"26"
+		],
+		"_fSpeedType": [
+			"walk"
+		],
+		"_fSpeed": 30,
+		"_fAc": [
+			18
+		],
+		"_fHp": 272,
+		"_fAlign": [
+			"L",
+			"E"
+		],
+		"_fVuln": [],
+		"_fRes": [
+			"cold",
+			"lightning",
+			"necrotic"
+		],
+		"_fImm": [
+			"poison",
+			"bludgeoning",
+			"piercing",
+			"slashing"
+		],
+		"_fCondImm": [
+			"charmed",
+			"exhaustion",
+			"frightened",
+			"paralyzed",
+			"poisoned",
+			"stunned"
+		],
+		"_fSave": [
+			"con",
+			"int",
+			"wis"
+		],
+		"_fSkill": [
+			"arcana",
+			"history",
+			"insight",
+			"perception"
+		],
+		"_fSources": "VD",
+		"_fPassive": 25,
+		"_fMisc": [
+			"Spellcaster",
+			"Spellcaster, Intelligence",
+			"Reactions",
+			"Bonus Actions",
+			"AOE",
+			"MW",
+			"Has Alternate Token",
+			"Has Token",
+			"Has Info",
+			"Has Images",
+			"AC from Natural Armor",
+			"Has Recharge"
+		],
+		"_fSpellsKnown": [
+			"animate dead|phb",
+			"detect magic|phb",
+			"dispel magic|phb",
+			"fly|phb",
+			"lightning bolt|phb",
+			"mage hand|phb",
+			"prestidigitation|phb",
+			"dimension door|phb",
+			"invisibility|phb",
+			"scrying|phb",
+			"dominate monster|phb",
+			"globe of invulnerability|phb",
+			"plane shift|phb"
+		],
+		"_fLanguageTags": [
+			"C",
+			"DR",
+			"E",
+			"I"
+		]
+	},
+	{
+		"name": "Strahd von Zarovich",
+		"isNpc": true,
+		"isNamedCreature": true,
+		"source": "CoS",
+		"page": 240,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "undead",
+			"tags": [
+				"shapechanger"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 144,
+			"formula": "17d8 + 68"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 18,
+		"con": 18,
+		"int": 20,
+		"wis": 15,
+		"cha": 18,
+		"save": {
+			"dex": "+9",
+			"wis": "+7",
+			"cha": "+9"
+		},
+		"skill": {
+			"arcana": "+15",
+			"perception": "+12",
+			"religion": "+10",
+			"stealth": "+14"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 22,
+		"resist": [
+			"necrotic",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"languages": [
+			"Abyssal",
+			"Common",
+			"Draconic",
+			"Elvish",
+			"Giant",
+			"Infernal"
+		],
+		"cr": "15",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"Strahd is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). He has the following wizard spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell mage hand}",
+							"{@spell prestidigitation}",
+							"{@spell ray of frost}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell comprehend languages}",
+							"{@spell fog cloud}",
+							"{@spell sleep}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell detect thoughts}",
+							"{@spell gust of wind}",
+							"{@spell mirror image}"
+						]
+					},
+					"3": {
+						"slots": 3,
+						"spells": [
+							"{@spell animate dead}",
+							"{@spell fireball}",
+							"{@spell nondetection}"
+						]
+					},
+					"4": {
+						"slots": 3,
+						"spells": [
+							"{@spell blight}",
+							"{@spell greater invisibility}",
+							"{@spell polymorph}"
+						]
+					},
+					"5": {
+						"slots": 1,
+						"spells": [
+							"{@spell animate objects}",
+							"{@spell scrying}"
+						]
+					}
+				},
+				"ability": "int",
+				"type": "spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"If Strahd isn't in running water or sunlight, he can use his action to polymorph into a Tiny bat, a Medium wolf, or a Medium cloud of mist, or back into his true form.",
+					"While in bat or wolf form, Strahd can't speak. In bat form, his walking speed is 5 feet, and he has a flying speed of 30 feet. In wolf form, his walking speed is 40 feet. His statistics, other than his size and speed, are unchanged. Anything he is wearing transforms with him, but nothing he is carrying does. He reverts to his true form if he dies.",
+					"While in mist form, Strahd can't take any actions, speak, or manipulate objects. He is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and he can't pass through water. He has advantage on Strength, Dexterity, and Constitution saving throws, and he is immune to all nonmagical damage, except the damage he takes from sunlight."
+				]
+			},
+			{
+				"name": "Legendary Resistance (3/Day)",
+				"entries": [
+					"If Strahd fails a saving throw, he can choose to succeed instead."
+				]
+			},
+			{
+				"name": "Misty Escape",
+				"entries": [
+					"When Strahd drops to 0 hit points outside his coffin, he transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that he isn't in running water or sunlight. If he can't transform, he is destroyed.",
+					"While he has 0 hit points in mist form, he can't revert to his vampire form, and he must reach his coffin within 2 hours or be destroyed. Once in his coffin, he reverts to his vampire form. He is then {@condition paralyzed} until he regains at least 1 hit point. After 1 hour in his coffin with 0 hit points, he regains 1 hit point."
+				]
+			},
+			{
+				"name": "Regeneration",
+				"entries": [
+					"Strahd regains 20 hit points at the start of his turn if he has at least 1 hit point and isn't in running water or sunlight. If he takes radiant damage or damage from holy water, this trait doesn't function at the start of his next turn."
+				]
+			},
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"Strahd can climb difficult surfaces, including upside down on ceilings, without having to make an ability check."
+				]
+			},
+			{
+				"name": "Vampire Weaknesses",
+				"entries": [
+					"Strahd has the following flaws:",
+					"{@i Forbiddance.} He can't enter a residence without an invitation from one of the occupants.",
+					"{@i Harmed by Running Water.} He takes 20 acid damage if he ends his turn in running water.",
+					"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into his heart while he is {@condition incapacitated} in his coffin, he is {@condition paralyzed} until the stake is removed.",
+					"{@i Sunlight Hypersensitivity.} While in sunlight, Strahd takes 20 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack (Vampire Form Only)",
+				"entries": [
+					"Strahd makes two attacks, only one of which can be a bite attack."
+				]
+			},
+			{
+				"name": "Unarmed Strike (Vampire or Wolf Form Only)",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, plus 14 ({@damage 4d6}) necrotic damage. If the target is a creature, Strahd can grapple it (escape {@dc 18}) instead of dealing the slashing damage."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by Strahd, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and Strahd regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if its hit point maximum is reduced to 0. A humanoid slain in this way and then buried in the ground rises the following night as a {@creature vampire spawn} under Strahd's control."
+				]
+			},
+			{
+				"name": "Charm",
+				"entries": [
+					"Strahd targets one humanoid he can see within 30 feet of him. If the target can see Strahd, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed}. The {@condition charmed} target regards Strahd as a trusted friend to be heeded and protected. The target isn't under Strahd's control, but it takes Strahd's requests and actions in the most favorable way and lets Strahd bite it.",
+					"Each time Strahd or his companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until Strahd is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+				]
+			},
+			{
+				"name": "Children of the Night (1/Day)",
+				"entries": [
+					"Strahd magically calls {@dice 2d4} {@creature swarm of bats||swarms of bats} or {@creature swarm of rats||swarms of rats}, provided that the sun isn't up. While outdoors, Strahd can call {@dice 3d6} {@creature wolf||wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Strahd and obeying his spoken commands. The beasts remain for 1 hour, until Strahd dies, or until he dismisses them as a bonus action."
+				]
+			}
+		],
+		"legendary": [
+			{
+				"name": "Move",
+				"entries": [
+					"Strahd moves up to his speed without provoking opportunity attacks."
+				]
+			},
+			{
+				"name": "Unarmed Strike",
+				"entries": [
+					"Strahd makes one unarmed strike."
+				]
+			},
+			{
+				"name": "Bite (Costs 2 Actions)",
+				"entries": [
+					"Strahd makes one bite attack."
+				]
+			}
+		],
+		"legendaryGroup": {
+			"name": "Strahd von Zarovich",
+			"source": "CoS"
+		},
+		"traitTags": [
+			"Legendary Resistances",
+			"Regeneration",
+			"Shapechanger",
+			"Spider Climb",
+			"Sunlight Sensitivity"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AB",
+			"C",
+			"DR",
+			"E",
+			"GI",
+			"I"
+		],
+		"damageTags": [
+			"N",
+			"P",
+			"S"
+		],
+		"damageTagsSpell": [
+			"B",
+			"C",
+			"F",
+			"N",
+			"P",
+			"S"
+		],
+		"spellcastingTags": [
+			"CW"
+		],
+		"miscTags": [
+			"HPR",
+			"MW"
+		],
+		"conditionInflict": [
+			"charmed"
+		],
+		"conditionInflictSpell": [
+			"invisible",
+			"unconscious"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"__prop": "monster",
+		"_pTypes": {
+			"type": "undead",
+			"tags": [
+				"shapechanger"
+			],
+			"asText": "undead (shapechanger)"
+		},
+		"_pCr": "15",
+		"_fCr": [
+			"15"
+		],
+		"_fSpeedType": [
+			"walk"
+		],
+		"_fSpeed": 30,
+		"_fAc": [
+			16
+		],
+		"_fHp": 144,
+		"_fAlign": [
+			"L",
+			"E"
+		],
+		"_fVuln": [],
+		"_fRes": [
+			"necrotic",
+			"bludgeoning (Conditional)",
+			"piercing (Conditional)",
+			"slashing (Conditional)"
+		],
+		"_fImm": [],
+		"_fCondImm": [],
+		"_fSave": [
+			"dex",
+			"wis",
+			"cha"
+		],
+		"_fSkill": [
+			"arcana",
+			"perception",
+			"religion",
+			"stealth"
+		],
+		"_fSources": "CoS",
+		"_fPassive": 22,
+		"_fMisc": [
+			"Legendary",
+			"Spellcaster",
+			"Spellcaster, Intelligence",
+			"Adventure NPC",
+			"Lair Actions",
+			"HPR",
+			"MW",
+			"Has Token",
+			"Has Info",
+			"AC from Natural Armor"
+		],
+		"_fSpellSlotLevels": [
+			1,
+			2,
+			3,
+			4,
+			5
+		],
+		"_fSpellsKnown": [
+			"mage hand|phb",
+			"prestidigitation|phb",
+			"ray of frost|phb",
+			"comprehend languages|phb",
+			"fog cloud|phb",
+			"sleep|phb",
+			"detect thoughts|phb",
+			"gust of wind|phb",
+			"mirror image|phb",
+			"animate dead|phb",
+			"fireball|phb",
+			"nondetection|phb",
+			"blight|phb",
+			"greater invisibility|phb",
+			"polymorph|phb",
+			"animate objects|phb",
+			"scrying|phb"
+		],
+		"_fLanguageTags": [
+			"AB",
+			"C",
+			"DR",
+			"E",
+			"GI",
+			"I"
+		]
+	}
+]

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Test Note.md",
-            "mode": "source",
+            "file": "Ceremony.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test Note.md",
+                "file": "Ceremony.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Test Note.md",
+                "file": "Ceremony.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test Note.md"
+                "file": "Ceremony.md"
               }
             }
           }
@@ -129,5 +129,12 @@
     "collapsed": true
   },
   "active": "ee6f74f43aaeb740",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Druidcraft.md",
+    "Ceremony.md",
+    "JSON/spells.md",
+    "JSON/Spell/test.md",
+    "JSON/spells (2).md",
+    "Test Note.md"
+  ]
 }
